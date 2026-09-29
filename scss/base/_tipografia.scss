@@ -1,0 +1,23 @@
+@use "../utilities/variables" as v;
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.specialh2 {
+    color: v.$color-dorado;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}

@@ -1,0 +1,32 @@
+@use "../utilities/variables" as v;
+
+.navbar {
+    width: 100%;
+}
+
+.nav-link {
+    color: v.$color-dorado;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: whitesmoke;
+}
+
+.nav-link:focus {
+    color: whitesmoke;
+}
+
+.nav-link:active {
+    color: v.$color-dorado-claro;
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+        gap: 1.875rem;
+        flex-wrap: nowrap;
+    }
+}

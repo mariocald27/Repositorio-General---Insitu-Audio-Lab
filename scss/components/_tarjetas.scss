@@ -1,0 +1,9 @@
+@use "../utilities/mixin";
+
+.tarjeta {
+    padding: 1.25rem;
+}
+
+.tarjeta img {
+    @include mixin.imagen-cover(15.625rem);
+}

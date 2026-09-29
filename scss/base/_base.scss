@@ -1,0 +1,26 @@
+@use "../utilities/variables" as v;
+
+body {
+    background-color: v.$color-negro;
+    color: v.$color-blanco;
+    font-family: v.$fuente;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+}
+
+aside a {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

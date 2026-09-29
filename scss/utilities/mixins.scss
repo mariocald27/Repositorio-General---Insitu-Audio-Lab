@@ -1,0 +1,25 @@
+//bloques de estilos reutilizables
+@mixin imagen-cover($altura) {
+    width: 100%;
+    height: $altura;
+    object-fit: cover;
+}
+//flex
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+// Grid
+@mixin grid($columnas, $gap) {
+    display: grid;
+    grid-template-columns: $columnas;
+    gap: $gap;
+}
+//Vista de Escritorio
+@mixin escritorio{
+    @media (min-width:1024px){
+        @content;
+    }
+    
+}
