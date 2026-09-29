@@ -1,5 +1,5 @@
 @use "../utilities/variables" as v;
-@use "../utilities/mixin";
+@use "../utilities/mixins";
 
 main aside a {
     transition: 0.3s;
@@ -24,7 +24,7 @@ main aside a:active {
 }
 
 #carouselExample img {
-    @include mixin.imagen-cover(25rem);
+    @include mixins.imagen-cover(25rem);
 }
 
 .texto-carrusel {
@@ -56,7 +56,7 @@ main aside a:active {
 }
 
 .portafolio {
-    @include mixin.grid(1fr, 1.875rem);
+    @include mixins.grid(1fr, 1.875rem);
 }
 
 iframe {
@@ -67,7 +67,7 @@ iframe {
 }
 
 .contacto-contenedor {
-    @include mixin.grid(1fr, 2rem);
+    @include mixins.grid(1fr, 2rem);
     grid-template-areas: "form" "info" "bogota";
 }
 
@@ -84,11 +84,11 @@ iframe {
 }
 
 .contacto-contenedor img {
-    @include mixin.imagen-cover(15.625rem);
+    @include mixins.imagen-cover(15.625rem);
 }
 
 .contacto-contenedor > figure img {
-    @include mixin.imagen-cover(20rem);
+    @include mixins.imagen-cover(20rem);
 }
 
 @media (min-width: 1024px) {

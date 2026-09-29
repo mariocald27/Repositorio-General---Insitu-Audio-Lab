@@ -1,7 +1,7 @@
-@use "../utilities/mixin";
+@use "../utilities/mixins";
 
 .galeria {
-    @include mixin.grid(1fr, 1.875rem);
+    @include mixins.grid(1fr, 1.875rem);
 }
 @media (min-width: 1024px) {
     .galeria {

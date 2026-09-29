@@ -1,4 +1,9 @@
 @use "../utilities/variables" as v;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: v.$color-negro;
@@ -18,6 +23,7 @@ aside a {
     display: flex;
     justify-content: center;
 }
+
 
 @media (min-width: 1024px) {
     section {
