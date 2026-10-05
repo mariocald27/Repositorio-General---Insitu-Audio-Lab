@@ -1,14 +1,13 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins";
-
 header {
     @include mixins.flex(space-between, center);
     padding: 1.25rem;
     border: 0.0625rem solid v.$color-dorado;
 
+    img {
+        width: 9.375rem;
+        height: auto;
+    }
 }
 
-header img {
-    width: 9.375rem;
-    height: auto;
-}

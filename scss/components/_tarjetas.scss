@@ -2,8 +2,9 @@
 
 .tarjeta {
     padding: 1.25rem;
-}
 
-.tarjeta img {
-    @include mixins.imagen-cover(15.625rem);
+
+    .img {
+        @include mixins.imagen-cover(15.625rem);
+    }
 }

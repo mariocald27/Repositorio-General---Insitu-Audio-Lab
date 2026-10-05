@@ -5,17 +5,16 @@ footer {
     @include mixins.flex(space-between, center);
     padding: 1.25rem;
     border: 0.0625rem solid v.$color-dorado;
-}
 
-footer img {
-    width: 1.875rem;
-    height: 1.875rem;
-    object-fit: cover;
-}
+    img {
+        width: 1.875rem;
+        height: 1.875rem;
+        object-fit: cover;
+    }
 
-footer ul {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
 }
-

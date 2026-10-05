@@ -10,20 +10,19 @@
     font-weight: 700;
     text-decoration: none;
     transition: 0.3s;
-}
 
-.nav-link:hover {
-    color: whitesmoke;
-}
+    &:hover {
+        color: whitesmoke;
+    }
 
-.nav-link:focus {
-    color: whitesmoke;
-}
+    &:focus {
+        color: whitesmoke;
+    }
 
-.nav-link:active {
-    color: v.$color-dorado-claro;
+    &:active {
+        color: v.$color-dorado-claro;
+    }
 }
-
 @media (min-width: 1024px) {
     nav ul {
         gap: 1.875rem;

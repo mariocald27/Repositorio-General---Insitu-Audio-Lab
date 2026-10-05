@@ -3,29 +3,30 @@
 
 main aside a {
     transition: 0.3s;
-}
 
-main aside a:hover {
-    color: v.$color-dorado;
-    text-decoration: underline;
-}
+    &:hover {
+        color: v.$color-dorado;
+        text-decoration: underline;
+    }
 
-main aside a:focus {
-    color: whitesmoke;
-}
+    &:focus {
+        color: whitesmoke;
+    }
 
-main aside a:active {
-    color: v.$color-dorado-claro;
+    &:active {
+        color: v.$color-dorado-claro;
+    }
 }
 
 #carouselExample {
     max-width: 80rem;
     margin: 0 auto;
+
+    img {
+        @include mixins.imagen-cover(25rem);
+    }
 }
 
-#carouselExample img {
-    @include mixins.imagen-cover(25rem);
-}
 
 .texto-carrusel {
     text-align: center;
@@ -69,41 +70,40 @@ iframe {
 .contacto-contenedor {
     @include mixins.grid(1fr, 2rem);
     grid-template-areas: "form" "info" "bogota";
+
+    form {
+        grid-area: form;
+    }
+
+    section {
+        grid-area: info;
+    }
+
+    img {
+        @include mixins.imagen-cover(15.625rem);
+    }
+
+    > figure {
+        grid-area: bogota;
+
+        img {
+            @include mixins.imagen-cover(20rem);
+        }
+    }
 }
 
-.contacto-contenedor form {
-    grid-area: form;
-}
-
-.contacto-contenedor section {
-    grid-area: info;
-}
-
-.contacto-contenedor > figure {
-    grid-area: bogota;
-}
-
-.contacto-contenedor img {
-    @include mixins.imagen-cover(15.625rem);
-}
-
-.contacto-contenedor > figure img {
-    @include mixins.imagen-cover(20rem);
-}
 
 @media (min-width: 1024px) {
     .portafolio {
         grid-template-columns: repeat(2, 1fr);
     }
-}
 
-@media (min-width: 1024px) {
     .contacto-contenedor {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "form info" "bogota bogota";
-    }
 
-    .contacto-contenedor section {
-        grid-template-columns: 1fr;
+        section {
+            grid-template-columns: 1fr;
+        }
     }
 }
